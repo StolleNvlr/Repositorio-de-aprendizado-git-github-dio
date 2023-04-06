@@ -1,10 +1,10 @@
 const peso = 200;
 const altura = 1.79
-const IMC = peso / (altura**2);
+const IMC = peso / Math.pow(altura, 2);
 
 console.log(IMC.toFixed(2))
 
-if(IMC < 18.5) {
+if (IMC < 18.5) {
     console.log('Abaixo do peso')
 } else if (IMC >= 18.5 && IMC < 25) {
     console.log('Peso Normal')
